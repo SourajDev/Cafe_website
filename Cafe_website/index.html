@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/df78366a05.js" crossorigin="anonymous"></script>
+     <!--=============== REMIXICONS ===============-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+     <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallary</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="logo_name">FoodieMama</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About Us</a></li>
+        <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+        <li class="hideOnMobile"><a href="#gallery">Gallary</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <div class="back">
+      <div class="back_text_box">
+        <h1>Welcome To FoodieMama</h1>
+        <h3>Enjoy cafe Food With Amazing ambience and Affortable Price !</h3>
+        <button class="btn_book">Book Seat</button>
+      </div>
+    </div>
+    <div class="story_com" id="about">
+      <div class="story_box">
+        <h2>OUR STORY</h2>
+        <h1>Welcome</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          </p>
+        <button>Learn More About Us</button>
+      </div>
+      <div class="story_img"></div>
+    </div>
+    <div class="banner">
+      <div class="banner_box">
+        <h1>OUR OFFERS</h1>
+        <h2>Our Offer This Summer</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div> 
+  </div>
+
+     <section class="container10">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="./images/BUrger2.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Burger</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+                       <div id="tooltip">
+                        <span id="tooltiptext">550</span>
+                        <a href="#" class="card__button">Buy Now</a>
+                       </div>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="./images/pizza.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Pizza</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+                       <div id="tooltip">
+                        <span id="tooltiptext">160</span>
+                        <a href="#" class="card__button">Buy Now</a>
+                       </div>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="./images/brodu8s_noodles_625x300_02_March_22.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Noodles</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <div id="tooltip">
+                        <span id="tooltiptext">850</span>
+                        <a href="#" class="card__button">Buy Now</a>
+                       </div>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="./images/momoms.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Momos</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <div id="tooltip">
+                        <span id="tooltiptext">900</span>
+                        <a href="#" class="card__button">Buy Now</a>
+                       </div>
+                    </div>
+                 </article>
+
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="./images/Chilli_chickenpalates_Desire-e1593266853471-scaled.jpg" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Chili Chicken</h3>
+                       <p class="card__description">
+                          Passionate about development and design, 
+                          I carry out projects at the request of users.
+                       </p>
+     
+                       <div id="tooltip">
+                        <span id="tooltiptext">720</span>
+                        <a href="#" class="card__button">Buy Now</a>
+                       </div>
+                    </div>
+                 </article>
+              </div>
+           </div>
+
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+           </div>
+
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
+     
+     <!--=============== SWIPER JS ===============-->
+     <script src="./js/swiper-bundle.min.js"></script>
+
+     <!--=============== MAIN JS ===============-->
+     <script src="./js/main.js"></script>
+
+
+
+     <!-- <div class="container20" id="menu">
+      <div class="header">
+         <div class="title">FoodieMama's Resturant Menu</div>
+      </div>
+      <div class="indicators">
+         <div id="i1">
+            <div class="navi-indicator" id="ni1"></div>
+         </div>
+         <div id="i2">
+            <div class="navi-indicator" id="ni2"></div>
+         </div>
+         <div id="i3">
+            <div class="navi-indicator" id="ni3"></div>
+         </div>
+         <div id="i4">
+            <div class="navi-indicator" id="ni4"></div>
+         </div>
+      </div>
+      <div class="navi">
+         <div class="navi-item1">
+            <button class="nav-button" id="startersbutton">
+               <div class="navi-icon"><i class="fas fa-seedling"></i></div>
+               <div class="navi-text">Starters</div>
+            </button>
+         </div>
+         <div class="navi-item2">
+            <button class="nav-button" id="mainsbutton">
+               <div class="navi-icon"><i class="fas fa-pizza-slice"></i></div>
+               <div class="navi-text">Mains</div>
+            </button>
+         </div>
+         <div class="navi-item3">
+            <button class="nav-button" id="dessertsbutton">
+               <div class="navi-icon"><i class="fas fa-ice-cream"></i></div>
+               <div class="navi-text">Desserts</div>
+            </button>
+         </div>
+         <div class="navi-item4">
+            <button class="nav-button" id="drinksbutton">
+               <div class="navi-icon"><i class="fas fa-wine-glass-alt"></i></div>
+               <div class="navi-text">Drinks</div>
+            </button>
+         </div>
+      </div>
+      <div class="menu">
+         <div class="menu-separator">Separator</div>
+         <div class="menu-item">
+            <div class="menu-item-name">Food</div>
+            <div class="menu-item-description">Food yada yada</div>
+            <div class="menu-item-price">17.50</div>
+         </div>
+         <div class="menu-separator">Separator</div>
+         <div class="drink-item">
+            <div class="drink-item-name">Drink</div>
+            <div class="drink-item-description">3.3dl</div>
+            <div class="drink-item-price">4.50</div>
+         </div>
+         <script src="./js/fliter.js"></script>
+      </div>
+   </div> -->
+   <div class="menu-card" id="menu">
+      <div class="menu-container">
+         <h1>Our Menu</h1>
+         <div class="menu-item">
+             <img src="https://cdn.pixabay.com/photo/2021/05/18/15/15/pasta-6263653_1280.jpg" alt="Pasta">
+             <div class="item-details">
+                 <h2>Pasta</h2>
+                 <p>Delicious homemade pasta with tomato sauce.</p>
+               
+             </div>
+         </div>
+         <div class="menu-item">
+             <img src="https://plus.unsplash.com/premium_photo-1683619761468-b06992704398?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Burger">
+             <div class="item-details">
+                 <h2>Burger</h2>
+                 <p>Juicy beef burger with fresh lettuce and tomatoes.</p>
+                 <!-- <span class="price">$10.99</span> -->
+             </div>
+         </div>
+         <div class="menu-item">
+             <img src="https://cdn.pixabay.com/photo/2022/05/20/08/55/pasta-7209002_1280.jpg" alt="Salad">
+             <div class="item-details">
+                 <h2>Salad</h2>
+                 <p>Healthy green salad with various fresh vegetables.</p>
+                 <!-- <span class="price">$8.99</span> -->
+             </div>
+         </div>
+         <div class="menu-item">
+            <img src="https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg" alt="Salad">
+            <div class="item-details">
+                <h2>Franch Fries</h2>
+                <p>Healthy green salad with various fresh vegetables.</p>
+                <!-- <span class="price">$8.99</span> -->
+            </div>
+        </div>
+        <div class="menu-item">
+         <img src="https://cdn.pixabay.com/photo/2023/10/26/14/31/cake-8342822_1280.jpg" alt="Salad">
+         <div class="item-details">
+             <h2>Tiramisu</h2>
+             <p>Healthy green salad with various fresh vegetables.</p>
+             <!-- <span class="price">$8.99</span> -->
+         </div>
+     </div>
+     <div class="menu-item">
+      <img src="https://cdn.pixabay.com/photo/2017/02/01/10/46/cocktail-2029572_1280.jpg" alt="Salad">
+      <div class="item-details">
+          <h2>Majito</h2>
+          <p>Healthy green salad with various fresh vegetables.</p>
+          <!-- <span class="price">$8.99</span> -->
+      </div>
+  </div>
+     </div>
+     <script src="js/menu.js"></script>
+   </div>
+   <div class="container50">
+
+      <h1 class="heading" id="gallery">Gallary</h1>
+   
+      <div class="gallery">
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/chingri.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+         </div>
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/kosha.jfif" alt="sunset behind San Francisco city skyline">
+         </div>
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/sukto.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+         </div>
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/kochu saak.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+         </div>
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/potol.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+         </div>
+   
+         <div class="gallery-item">
+            <img class="gallery-image" src="images/dhoka.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+         </div>
+   
+      </div>
+   
+   </div>
+   <div class="contact">
+      <div class="Get">
+         <h1>Get In Touch</h1>
+         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+      </div>
+      <div class="Inputbox">
+         <div class="Inputtext">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email"><br>
+            <textarea name="" id="" placeholder="Write Your Text"></textarea><br>
+            <input type="Submit" value="Send Massage" id="btn_snd"></button>
+         </div>
+         <div class="photo_add">
+            <img src="./images/chef.jpg" alt="No Image" width="200" height="200">
+            Address:
+121 Street, Melbourne Victoria
+3000 Australia
+<br>
+Phone:
+90 987 65 44
+<br>
+Email:
+info@yoursite.com
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div class="content" id="contact">
+          <div class="top">
+              <div class="logo-details">
+                  <span class="logo_name">FoodieMama</span>
+              </div>
+              <div class="media-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+          </div>
+          <div class="link-boxes">
+              <ul class="box">
+                  <li class="link_name">Links</li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Get Started</a></li>
+              
+              </ul>
+              <ul class="box">
+                  <li class="link_name">Services</li>
+                  <li><a href="#">App Design</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Logo Design</a></li>
+                  <li><a href="#">Banner Design</a></li>
+              
+              </ul>
+      <ul class="box">
+                  <li class="link_name">Other services</li>
+                  <li><a href="#">SEO</a></li>
+                  <li><a href="#">Content Marketing</a></li>
+                  <li><a href="#">Prints</a></li>
+                  <li><a href="#">Social Media</a></li>
+              
+              </ul>
+              <ul class="box">
+                  <li class="link_name">Contact</li>
+                  <li><a href="#">+91 8879887262</a></li>
+                  <li><a href="#">+91 8879887262</a></li>
+                  <li><a href="#">contact@sitesoch.com</a></li>
+                  
+              
+              </ul>
+              
+      
+      
+      
+          </div>
+      </div>
+          <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text">Copyright © 2024 <a href="#">Souraj Khatua</a></span>
+          <span class="policy_terms">
+            <a href="#">Privacy policy</a>
+            
+          </span>
+        </div>
+      </div>
+  </footer>
+  </div>
+</body>
+</html>
